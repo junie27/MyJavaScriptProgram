@@ -1,0 +1,16 @@
+<HTML>
+<BODY>
+<SCRIPT LANGUAGE = JavaScript>
+var year = prompt("Enter your birth year:");
+var month = prompt("Enter your birth month (1-12):");
+var day = prompt("Enter your birth day:");
+var TodayDate = new Date();
+var age = TodayDate.getFullYear() - parseInt(year);
+if (TodayDate.getMonth() < month - 1 || (TodayDate.getMonth() === month - 1 && TodayDate.getDate() < day)) 
+{
+ age--;
+}
+alert("You are " + age + " years old.");
+</SCRIPT>
+</BODY>
+</HTML>

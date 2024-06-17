@@ -1,0 +1,51 @@
+<HTML>
+<SCRIPT LANGUAGE = JavaScript>
+var birthMonth = parseInt(prompt("Please enter your birth month (MM):"));
+var birthDay = parseInt(prompt("Please enter your birth day (DD):"));
+var zodiacSign, info;
+
+if (birthMonth >= 1 && birthMonth <= 12 && birthDay >= 1 && birthDay <= 31) {
+    if ((birthMonth === 3 && birthDay >= 21) || (birthMonth === 4 && birthDay <= 19)) {
+        zodiacSign = "Aries";
+        info = "\nElement: Fire\nRuling Planet: Mars\nAries individuals are known for their dynamic energy, assertiveness, and competitive spirit. They are natural leaders who enjoy taking initiative and pursuing their goals with passion.";
+    } else if ((birthMonth === 4 && birthDay >= 20) || (birthMonth === 5 && birthDay <= 20)) {
+        zodiacSign = "Taurus";
+        info = "\nElement: Earth\nRuling Planet: Venus\nTaureans are known for their stability, reliability, and strong work ethic. They value security and comfort, often enjoying the finer things in life. Taurus individuals are also deeply grounded and practical.";
+    } else if ((birthMonth === 5 && birthDay >= 21) || (birthMonth === 6 && birthDay <= 20)) {
+        zodiacSign = "Gemini";
+        info = "\nElement: Air\nRuling Planet: Mercury\nGeminis are characterized by their versatility, quick wit, and sociability. They are excellent communicators and enjoy engaging with others intellectually. Geminis thrive on variety and often have diverse interests.";
+    } else if ((birthMonth === 6 && birthDay >= 21) || (birthMonth === 7 && birthDay <= 22)) {
+        zodiacSign = "Cancer";
+        info = "\nElement: Water\nRuling Planet: Moon\nCancerians are known for their nurturing nature, emotional sensitivity, and strong intuition. They are deeply connected to their families and homes, prioritizing emotional security above all else. Cancer individuals are also highly empathetic and compassionate.";
+    } else if ((birthMonth === 7 && birthDay >= 23) || (birthMonth === 8 && birthDay <= 22)) {
+        zodiacSign = "Leo";
+        info = "\nElement: Fire\nRuling Planet: Sun\nLeos are known for their confidence, charisma, and vibrant personality. They love being the center of attention and thrive in social settings. Leos are natural leaders who are generous, warm-hearted, and passionate.";
+    } else if ((birthMonth === 8 && birthDay >= 23) || (birthMonth === 9 && birthDay <= 22)) {
+        zodiacSign = "Virgo";
+        info = "\nElement: Earth\nRuling Planet: Mercury\nVirgos are characterized by their attention to detail, analytical mindset, and practical approach to life. They are perfectionists who excel in organizing and solving problems. Virgos are also known for their humility and willingness to help others.";
+    } else if ((birthMonth === 9 && birthDay >= 23) || (birthMonth === 10 && birthDay <= 22)) {
+        zodiacSign = "Libra";
+        info = "\nElement: Air\nRuling Planet: Venus\nLibras are known for their diplomacy, charm, and sense of fairness. They value harmony and balance in all aspects of life, often serving as peacemakers in conflicts. Libras are also social creatures who enjoy building connections and partnerships.";
+    } else if ((birthMonth === 10 && birthDay >= 23) || (birthMonth === 11 && birthDay <= 21)) {
+        zodiacSign = "Scorpio";
+        info = "\nElement: Water\nRuling Planet: Mars, Pluto\nScorpios are characterized by their intensity, passion, and resourcefulness. They are deeply emotional and possess strong intuition, often uncovering hidden truths. Scorpios are fiercely loyal and protective of their loved ones.";
+    } else if ((birthMonth === 11 && birthDay >= 22) || (birthMonth === 12 && birthDay <= 21)) {
+        zodiacSign = "Sagittarius";
+        info = "\nElement: Fire\nRuling Planet: Jupiter\nSagittarians are known for their adventurous spirit, optimism, and love for freedom. They are natural explorers who seek new experiences and knowledge. Sagittarians are also philosophical and open-minded, always eager to learn and grow.";
+    } else if ((birthMonth === 12 && birthDay >= 22) || (birthMonth === 1 && birthDay <= 19)) {
+        zodiacSign = "Capricorn";
+        info = "\nElement: Earth\nRuling Planet: Saturn\nCapricorns are characterized by their ambition, discipline, and practicality. They are hardworking individuals who are committed to achieving their goals. Capricorns value tradition and stability, often taking on leadership roles with responsibility and authority.";
+    } else if ((birthMonth === 1 && birthDay >= 20) || (birthMonth === 2 && birthDay <= 18)) {
+        zodiacSign = "Aquarius";
+        info = "\nAquarians are known for their originality, independence, and humanitarian nature. They are visionaries who are ahead of their time, often challenging the status quo. Aquarians value equality and social justice, advocating for change and progress.\nElement: Air\nRuling Planet: Uranus, Saturn";
+    } else if ((birthMonth === 2 && birthDay >= 19) || (birthMonth === 3 && birthDay <= 20)) {
+        zodiacSign = "Pisces";
+        info = "\nElement: Water\nRuling Planet: Neptune, Jupiter \nPisceans are characterized by their empathy, creativity, and intuition. They are highly sensitive individuals who are deeply in tune with their emotions and surroundings. Pisceans are imaginative and compassionate, often expressing themselves through art and spirituality.";
+    }
+
+    alert("Your zodiac sign is: " + zodiacSign + ". " + info);
+} else {
+    alert("Invalid month or day. Please enter a valid birthdate.");
+}
+</SCRIPT>
+</HTML>

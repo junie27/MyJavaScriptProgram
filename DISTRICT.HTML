@@ -1,0 +1,42 @@
+<HTML>
+<SCRIPT LANGUAGE = JavaScript>
+var district = prompt("Please enter a City or Municipality located in Cavite:");
+
+
+district = district.toUpperCase();
+
+var descr;
+
+if (district == "CAVITE CITY" || district == "KAWIT"||  district == "NOVELETA" || district == "ROSARIO" ) {
+	var descr = "First District of Cavite.\nIt has been represented in the House of Representatives of the Philippines since 1987. The district consists of the city of Cavite and its adjacent municipalities of Kawit, Noveleta and Rosario. It is currently represented in the 19th Congress by Ramon Jolo B. Revilla of the Lakas-CMD.";
+	}
+	else if (district == "BACOOR" || district == "CITY OF BACOOR") {
+	var descr = "Second District of Cavite.\nIt has been represented in the House of Representatives of the Philippines since 1987. The district consists of all barangays of the city of Bacoor. It is currently represented in the 19th Congress by Lani Mercado-Revilla of the Lakas-CMD.";
+	}
+	else if (district == "IMUS" || district == "CITY OF IMUS") {
+	var descr = "Third District of Cavite.\nIt has been represented in the House of Representatives of the Philippines since 1987. The district is composed of the city of Imus. It is currently represented in the 19th Congress by Adrian Jay Advincula of the National Unity Party (NUP).";
+	}
+	else if (district == "DASMARIÑAS" || district == "CITY OF DASMARIÑAS") {
+	var descr = "Fourth District of Cavite.\nIt consists of only the city of Dasmariñas. It is currently vacant in the 19th Congress since the death of Elpidio Barzaga Jr. on April 27, 2024. The district was officially referred to as Dasmariñas's at-large congressional district from its creation in 2009 until 2019.";
+	}
+	else if (district == "CARMONA" || district == "CITY OF CARMONA" || district == "SILANG" || district == "GENERAL MARIANO ALVAREZ") {
+	var descr = "Fifth District of Cavite.\nThe district consists of the city of Carmona and the adjacent eastern Cavite municipalities of General Mariano Alvarez and Silang, which are collectively known as Carsigma, and borders the province of Laguna and Cavite's 4th congressional district. It is currently represented in the 19th Congress by Roy M. Loyola of the Nationalist People's Coalition (NPC).";
+	}
+	else if (district == "GENERAL TRIAS" || district == "CITY OF GENERAL TRIAS") {
+	var descr = "Sixth District of Cavite.\nIt has been represented in the House of Representatives of the Philippines since 2010.[3] It currently consists of only the city of General Trias. It is currently represented in the 19th Congress by Antonio Ferrer of the National Unity Party (NUP).";
+	}
+	else if (district == "AMADEO" || district == "TRECE MARTIRES CITY" || district == "TRECE MARTIRES" || district == "INDANG" || district == "TANZA") {
+	var descr = "Seventh District of Cavite.\nThe district consists of Cavite's de facto capital city of Trece Martires and its adjacent municipalities of Amadeo, Indang, and Tanza. It is currently represented in the 19th Congress by Crispin Diego Remulla of the National Unity Party (NUP).";
+	}
+	else if (district == "TAGAYTAY" || district == "TAGAYTAY CITY" || district == "ALFONSO" || district == "GENERAL EMILIO AGUINALDO" || district == "MAGALLANES" || district == "MARAGONDON" || district == "MENDEZ" || district == "NAIC" || district == "TERNATE") {
+	var descr = "Eight District of Cavite.\nIt consists of the southern city of Tagaytay and the municipalities of Alfonso, General Emilio Aguinaldo, Magallanes, Maragondon, Mendez, Naic, and Ternate, bordering the provinces of Batangas and Laguna. It is currently represented in the 19th Congress by Aniela Bianca Tolentino of the National Unity Party (NUP).";
+	}
+	else {
+	alert ("Please enter a valid City or Municipality name.");
+	}
+	if (district) {
+		alert("The City or Municipality " + district + " is located at the " + descr);
+	}
+
+</SCRIPT>
+</HTML>
